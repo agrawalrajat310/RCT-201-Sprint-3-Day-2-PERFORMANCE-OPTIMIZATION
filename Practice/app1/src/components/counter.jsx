@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const counter = () => (
-  <div>
-    <button>Admission</button>
-    <button>sub</button>
-    <p>Admission</p>
-    <p>sub and mult</p>
-    <img src=""alt='' />
-    <h1>Admission</h1>
-    <h1>Admission and divided</h1>
-    <h1>Admission and divided</h1>
-  </div>
-)
+const Counter = () => {
+const [state, setstate] = useState(0);
 
-export default counter
+  return (
+    <div>
+    <h1> {state}</h1> 
+      
+      <button onClick={()=>setstate(state+1)}>Add</button>
+      <button  onClick={()=>setstate(state+1)}>Sub</button>
+      
+      </div>
+  )
+}
+
+export default Counter
