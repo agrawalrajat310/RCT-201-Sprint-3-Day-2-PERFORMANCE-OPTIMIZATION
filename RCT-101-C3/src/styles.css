@@ -52,6 +52,7 @@
 .form button:disabled {
   background: gray;
   cursor: not-allowed;
+  border: 2px solid red;
 }
 
 .form + div > a {
