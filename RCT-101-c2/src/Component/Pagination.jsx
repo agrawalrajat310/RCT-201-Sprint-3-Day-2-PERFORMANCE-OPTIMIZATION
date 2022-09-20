@@ -8,7 +8,9 @@ function Pagination({ onChange, current, total }) {
       Prev
     </button>
   );
-  const currentPage = <button data-testid="current-page">{current}</button>;
+  const currentPage = 
+  <button data-testid="current-page">
+    {current}</button>;
   const next = (
     <button
       data-testid="next-page"

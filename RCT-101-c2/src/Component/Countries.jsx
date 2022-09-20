@@ -24,7 +24,7 @@ function Countries() {
       setData([...data.data]);
       setTotalPages(data.totalPages);
 
-      // console.log(data);
+      console.log(data);
     } catch (e) {
       setLoading(false);
       console.log(e);
@@ -51,8 +51,10 @@ function Countries() {
           );
         })}
       </div>
-      <div>
-        <Pagination onChange={handleChange} current={page} total={totalPages} />
+      <div> 
+        <Pagination onChange={handleChange} 
+        current={page}
+        total={totalPages} />
       </div>
     </div>
   );
