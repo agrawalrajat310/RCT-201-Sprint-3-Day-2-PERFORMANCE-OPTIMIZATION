@@ -9,6 +9,9 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const { loginUser, authState } = useContext(AppContext);
   const navigate = useNavigate();
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -21,9 +24,12 @@ function Login() {
     })
       .then((res) => res.json())
       .then((res) => {
+        setLoading(false)
         if (res.token) {
           loginUser(res.token);
           navigate("/dashboard");
+        }else{
+          alert("wrong email and password")
         }
       })
       .catch((err) => {

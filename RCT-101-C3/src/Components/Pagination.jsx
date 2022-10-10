@@ -1,8 +1,8 @@
 function createArrayOfSize(n) {
   return new Array(n).fill(0);
 }
-// n=4
-// [0, 0, 0, 0]
+// n=4->-totalpage
+// [0, 0, 0, ,0]
 function Pagination({ totalPages, currentPage, handlePageChange }) {
   let pages = createArrayOfSize(totalPages).map((a, i) => (
     <button

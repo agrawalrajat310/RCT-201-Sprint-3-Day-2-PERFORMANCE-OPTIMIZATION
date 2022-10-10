@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 
-export const AppContext = React.createContext();
+export const AppContext = createContext();
 
 function AppContextProvider({ children }) {
   const [state, setState] = useState({
@@ -11,9 +11,10 @@ function AppContextProvider({ children }) {
     setState({
       ...state,
       isAuth: true,
-      token,
+     token: token,
     });
   };
+  
   const logoutUser = () => {
     setState({
       ...state,
