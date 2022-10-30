@@ -1,26 +1,14 @@
 {
-  "data": [
+  "todos": [
+    {
+      "id": 1,
+      "title": "Learn Typescript",
+      "status": false
+    },
     {
       "title": "Hello world",
       "status": false,
-      "age": 22,
-      "id": 1
-    },
-    {
-      "title": "Hello",
-      "status": false,
-      "age": 23,
       "id": 2
-    },
-    {
-      "title": "Hello js",
-      "status": false,
-      "id": 3
-    },
-    {
-      "title": "Debu",
-      "status": false,
-      "id": 4
     }
   ]
 }
