@@ -40,7 +40,13 @@ function Login() {
       })
 
       let data = await res.json()
-      loginUser(data.token)
+      if(data.token){
+        loginUser(data.token)
+      }
+      else{
+        alert("not found")
+      }
+      // console.log(data);
 
     } catch (err) {
       console.log(err.message);
@@ -58,7 +64,8 @@ function Login() {
       <form onSubmit={handleSubmit} className="form" data-testid="login-form">
         <div>
           <label>
-            <input name="email" value={userID.email} onChange={handleChange} data-testid="email-input" type="email" placeholder="email" />
+            <input name="email" value={userID.email} onChange={handleChange} 
+            data-testid="email-input" type="email" placeholder="email" />
           </label>
         </div>
         <div>
