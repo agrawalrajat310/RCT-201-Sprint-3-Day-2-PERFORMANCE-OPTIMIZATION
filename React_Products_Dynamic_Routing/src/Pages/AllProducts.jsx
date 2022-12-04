@@ -25,7 +25,9 @@ if(loading) {<h1>Loading......</h1>}
         {data.map((el) => (
           <div key={el.id}>
             <Link to={`/products/${el.id}`}>
-              {el.id} - {el.name} - {el.price}
+              {el.id}
+              <h3 data-testid="product_name">{el.name} 
+                </h3> - {el.price}
             </Link>
           </div>
         ))}
