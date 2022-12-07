@@ -4,23 +4,24 @@ import { AuthContext } from '../Context/AuthContext';
 
 function Login() {
 
-  const { authState, loginUser } = useContext(AuthContext)
-  const email = useRef(null);
-  const password = useRef(null)
+  const { loginUser } = useContext(AuthContext)
+  // const email = useRef(null);
+  // const password = useRef(null)
+  const [text, setText] = useState({})
   const navigate = useNavigate()
 
   // *handling form submit
   const HandleSubmit = (e) => {
     e.preventDefault()
 
-    const user = {
-      email: email.current.value,
-      password: password.current.value
-    }
-
+    // const user = {
+    //   email: email.current.value,
+    //   password: password.current.value
+    // }
+  
     fetch(`https://reqres.in/api/login`, {
       method: "POST",
-      body: JSON.stringify(user),
+      body: JSON.stringify(text),
       headers: {
         'content-type': 'application/json'
       }
@@ -34,13 +35,24 @@ function Login() {
       .catch(err => console.log(err))
   }
 
+  const handleChange=(e)=>{
+const inp= e.target.name;
+setText({
+  ...text,
+  [inp]: e.target.value
+})
+  }
   return (
     <div>
       <form data-testid="login-form" onSubmit={HandleSubmit} >
         <div>
           <label>
             Email
-            <input data-testid="email-input" ref={email} type="email" placeholder="email" />
+            <input data-testid="email-input"
+            name="email"
+            //  ref={email} 
+            onChange={handleChange}
+             type="email" placeholder="email" />
           </label>
         </div>
         <div>
@@ -49,7 +61,9 @@ function Login() {
             <input
               data-testid="password-input"
               type="password"
-              ref={password}
+              name="password"
+              // ref={password}
+              onChange={handleChange}
               placeholder="password"
             />
           </label>
