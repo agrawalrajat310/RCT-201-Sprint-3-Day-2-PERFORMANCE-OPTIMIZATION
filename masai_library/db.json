@@ -1,0 +1,59 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "genre": "Fiction",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 1299,
+      "borrowed": false
+    },
+    {
+      "id": 2,
+      "image_url": "https://n2.sdlcdn.com/imgs/a/4/6/Harry-Potter-And-The-Philosophers-SDL237954387-1-5e0d6.jpg",
+      "book_name": "Harry Potter and the Chamber of Secrets",
+      "author": "J. K. Rowling",
+      "genre": "Science",
+      "edition": "1998",
+      "publisher": "Bloomsbury",
+      "cost": 599,
+      "borrowed": false
+    },
+    {
+      "id": 3,
+      "book_name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "edition": "1993",
+      "cost": 300,
+      "borrowed": false,
+      "publisher": "Bloomsbury",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865681l/25076674._SY475_.jpg"
+    },
+    {
+      "image_url": "https://images-eu.ssl-images-amazon.com/images/I/41U%2BxVr-G-L.jpg",
+      "book_name": "The Hound of the Baskervilles",
+      "author": "JK Rowling",
+      "genre": "History",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": "899",
+      "borrowed": false,
+      "id": 4
+    },
+    {
+      "image_url": "https://images-eu.ssl-images-amazon.com/images/I/41U%2BxVr-G-L.jpg",
+      "book_name": "The Hound of the Baskervilles",
+      "author": "JK Rowling",
+      "genre": "History",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": "755",
+      "borrowed": true,
+      "id": 5
+    }
+  ]
+}

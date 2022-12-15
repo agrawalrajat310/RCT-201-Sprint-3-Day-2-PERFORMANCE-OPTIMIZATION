@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/admin.css" />
+    <title>masai_books_library</title>
+  </head>
+  <body>
+    <div id="logout">
+      <button >Logout</button>
+    </div>
+    <div id="modal">
+      <div>
+        <button onclick="document.getElementById('modal').style.display='none'">
+          Close
+        </button>
+      </div>
+
+      <form id="form_edit">
+        <div>
+          <input id="image_edit" type="url" placeholder="Image url" />
+        </div>
+        <div>
+          <input id="name_edit" type="" placeholder="Book name" />
+        </div>
+        <div>
+          <input id="author_edit" type="" placeholder="author " />
+        </div>
+        <div>
+          <select name="" id="filter_edit">
+            <option value="Science">Science</option>
+            <option value="Fiction">Fiction</option>
+            <option value="History">History</option>
+            <option value="Tech">Tech</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+        <div>
+          <select name="edition" id="edition_edit">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+        <div>
+          <input type="number" name="" placeholder="Cost" id="cost_edit" />
+        </div>
+        <div>
+          <input type="text" placeholder="publisher" name="" id="publisher_edit" />
+        </div>
+        <div><button id="update_btn">Update</button></div>
+      </form>
+    </div>
+    <div id="form_parent">
+      <h1>Welcome to Admin panel</h1>
+      <form action="">
+        <div>
+          <input id="image" type="url" placeholder="Image" />
+        </div>
+        <div>
+          <input id="name" type="" placeholder="Book name" />
+        </div>
+        <div>
+          <input id="author" type="" placeholder="author" />
+        </div>
+        <div>
+          <select name="" id="filter">
+            Science, Fiction, History, Tech, Business
+            <option value="Science">Science</option>
+            <option value="Fiction">Fiction</option>
+            <option value="History">History</option>
+            <option value="Tech">Tech</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+        <div>
+          <select name="" id="year">
+            Science, Fiction, History, Tech, Business
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+        <div>
+          <input type="number" name="" placeholder="Cost" id="cost" />
+        </div>
+        <div>
+          <input type="text" placeholder="publisher" name="" id="publisher" />
+        </div>
+        <div><button id="submit">Submit</button></div>
+      </form>
+    </div>
+
+    <div>
+      <table id="table">
+        <tr></tr>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="./script/admin.js"></script>

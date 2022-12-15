@@ -1,0 +1,39 @@
+#parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+img {
+  width: 30%;
+object-fit: cover;
+}
+
+#card {
+  display: flex;
+  gap: 50px;
+  border-radius: 15px;
+  background-color: rgba(183, 177, 177, 0.393);
+}
+
+#modal {
+  /* left: 25%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 36, 36, 0.881);
+  position: fixed;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  /* opacity: 2; */
+  z-index: 100;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  display: none;
+}
+#modalcard{
+  display: flex;
+  gap: 20px;
+}
