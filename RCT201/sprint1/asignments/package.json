@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve:1": "tsc src/b.ts",
-    "start": "node src/b.js"
+    "serve:1": "tsc src/a.ts",
+    "start": "node src/a.js"
   },
   "keywords": [],
   "author": "",
