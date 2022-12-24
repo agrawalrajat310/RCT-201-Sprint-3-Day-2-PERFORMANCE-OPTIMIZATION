@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": 1671801581741,
+      "date": "2022-12-23",
+      "text": "Learn Todos",
+      "status": "PENDING"
+    },
+    {
+      "id": 1671801588947,
+      "date": "2022-12-23",
+      "text": "Learn Typescript",
+      "status": "PENDING"
+    }
+  ]
+}
