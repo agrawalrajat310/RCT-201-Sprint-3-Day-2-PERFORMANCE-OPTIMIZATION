@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+.App{
+ 
+  align-items: center;
+}
+.main-counter{
+display: flex;
+align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.main-counter button{
+  
+}
