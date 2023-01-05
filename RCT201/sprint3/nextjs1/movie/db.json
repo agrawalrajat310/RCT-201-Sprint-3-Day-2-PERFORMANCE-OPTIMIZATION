@@ -1,0 +1,25 @@
+{
+    "movies": [
+      {
+        "Title": "Titanic",
+        "id": 1,
+        "rating": 5
+      },
+      {
+        "Title": "Avengers",
+        "id": 2,
+        "rating": 5
+      },
+      {
+        "Title": "End Game",
+        "id": 3,
+        "rating": 5
+      },
+      {
+        "Title": "Wakanda",
+        "id": 4,
+        "rating": 5
+      }
+    ],
+    "watchlist": []
+  }
