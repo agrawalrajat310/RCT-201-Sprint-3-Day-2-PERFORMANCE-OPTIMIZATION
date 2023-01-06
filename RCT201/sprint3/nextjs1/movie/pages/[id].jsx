@@ -5,19 +5,17 @@ import Image from "next/image";
 const SingleMovie = ({ movie }) => {
   // console.log(movie.Images[0]);
 
-
-
-  const handleClick=()=>{
-
-
-    const payload={
+  const handleClick = () => {
+    const payload = {
       Title: movie.Title,
       Released: movie.Released,
-      Images: movie.Images[0]
-    }
-    axios.post(`http://localhost:8080/watchlist`,payload).then((el)=> console.log(el.data))
-    .catch((er)=> console.log(er))
-  }
+      Images: movie.Images[0],
+    };
+    axios
+      .post(`http://localhost:8080/watchlist`, payload)
+      .then((el) => console.log(el.data))
+      .catch((er) => console.log(er));
+  };
   return (
     <div>
       <h1>Movie name: {movie.Title}</h1>
