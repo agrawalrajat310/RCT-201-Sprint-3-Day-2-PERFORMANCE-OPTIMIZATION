@@ -3,30 +3,32 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import Image from "next/image";
 const SingleMovie = ({ movie }) => {
-  console.log(movie.Images[0]);
+  // console.log(movie.Images[0]);
 
+
+
+  const handleClick=()=>{
+
+
+    const payload={
+      Title: movie.Title,
+      Released: movie.Released,
+      Images: movie.Images[0]
+    }
+    axios.post(`http://localhost:8080/watchlist`,payload).then((el)=> console.log(el.data))
+    .catch((er)=> console.log(er))
+  }
   return (
     <div>
       <h1>Movie name: {movie.Title}</h1>
       <p>Released: {movie.Released}</p>
       <div>
-      
-        <Image
-          src={movie.Images[0]}
-          alt="h" 
-          width="700" height="500"
-         ></Image>
-        <Image
-          src={movie.Images[1]}
-          alt="h" 
-          width="700" height="500"
-         ></Image>
-        <Image
-          src={movie.Images[2]}
-          alt="h" 
-          width="700" height="500"
-         ></Image>
+        <Image src={movie.Images[0]} alt="h" width="700" height="500"></Image>
+        <Image src={movie.Images[1]} alt="h" width="700" height="500"></Image>
+        <Image src={movie.Images[2]} alt="h" width="700" height="500"></Image>
       </div>
+
+      <button onClick={handleClick}>POST</button>
     </div>
   );
 };

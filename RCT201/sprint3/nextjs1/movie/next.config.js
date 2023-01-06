@@ -6,7 +6,7 @@ const nextConfig = {
 module.exports = {
   images: {
     // protocol: "https",
-    domains: ["images-na.ssl-images-amazon.com", "website.com"],
+    domains: ["images-na.ssl-images-amazon.com"],
     // port: "",
     // pathname: "/[id]/**",
   },
