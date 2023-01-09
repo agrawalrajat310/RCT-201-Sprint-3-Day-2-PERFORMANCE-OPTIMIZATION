@@ -14,7 +14,6 @@ const Todos = () => {
 
   const [text, setText] = useState([]);
   const [edit, setEdit] = useState({});
-  const [edits, setEdits] = useState("");
 
   useEffect(() => {
     dispatch(getTodosData());
@@ -107,6 +106,10 @@ const Todos = () => {
           </div>
         ))
       )}
+
+<button >Add</button>
+
+
     </div>
   );
 };

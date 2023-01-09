@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "country": "India",
+      "id": 2
+    },
+    {
+      "country": "FFF",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "city": "Hello",
+      "country": "India",
+      "id": 1672301347172
+    },
+    {
+      "city": "Hello",
+      "country": "India",
+      "id": 1672301350185
+    },
+    {
+      "city": "Hello",
+      "country": "India",
+      "id": 1672301352332
+    },
+    {
+      "city": "DDD",
+      "country": "India",
+      "id": 1672301409861
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,3 +1,4 @@
+// action Type
 export const GET_TODOS_LOADING = "GET_TODOS_LOADING";
 export const GET_TODOS_SUCCESS = "GET_TODOS_SUCCESS";
 export const GET_TODOS_ERROR = "GET_TODOS_ERROR";
@@ -5,7 +6,7 @@ export const GET_TODOS_DELETE = "GET_TODOS_DELETE";
 export const GET_TODOS_EDIT = "GET_TODOS_EDIT";
 
 
-
+//Action creator
 export const getTodosLoading= () =>({
         type: GET_TODOS_LOADING,
 })
@@ -23,6 +24,8 @@ export const getDeleteTodos=()=>({
 export const getEditTodos=()=>({
         type: GET_TODOS_EDIT,
 })
+
+
 
 
 export const getTodosData=()=>(dispatch)=>{
